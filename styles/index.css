@@ -168,13 +168,27 @@ li {
     font-size: 19pt;
 }
 
+@media screen and (max-width: 1152px) {
+    .carro {
+        width: 150px;
+        height: 225px;
+        font-size: 6pt;
+    }
+    .carro button {
+        width: 100px;
+        height: 17px;
+    }
+    #pagina img {
+        width: 150px;
+    }
+}
 @media screen and (max-width: 850px) {
     #abertura img {
         width: 200px;
-        margin: auto auto auto 25px;
+        margin: auto auto auto 15px;
     }
     #abertura div {
-        margin: auto 25px auto auto;
+        margin: auto 15px auto auto;
         width: 200px;
     }
     #abertura {
@@ -190,10 +204,10 @@ li {
 }
 @media screen and (max-width:802px){
     header {
-        height: 150px;
+        height: 125px;
     }
     #abertura {
-        padding-top: 200px;
+        padding-top: 175px;
     }
 }
 @media screen and (max-width: 768px) {
@@ -238,6 +252,14 @@ li {
     }
     .redes {
         width: 25px;
+    }
+}
+@media screen and (max-width: 385px) {
+    #abertura img {
+        display: none;
+    }
+    #abertura div {
+        margin: auto;
     }
 }
 @media screen and (max-width: 303px) {
