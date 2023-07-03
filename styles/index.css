@@ -173,6 +173,7 @@ li {
         width: 150px;
         height: 225px;
         font-size: 6pt;
+        margin: 15px;
     }
     .carro button {
         width: 100px;
@@ -231,27 +232,33 @@ li {
 }
 
 @media screen and (max-width: 524px) {
-    header label {
-        display: block;
-        cursor:pointer;
-        margin: auto;
-        font-size: 30pt;
-        width: 75px;
-    }
     header {
-        height: 100px;
+        height:60px;
+    }
+    header h1 {
+        font-size: 17pt;
+        margin: auto 10px auto auto;
+    }
+    .navs {
+        font-size: 8pt;
+        margin: auto auto auto 5px;
     }
     #abertura {
-        padding-top: 150px;
-    }
-    #nav, #user {
-        display:none;
+        padding-top: 110px;
     }
     footer {
         font-size: 9pt;
     }
     .redes {
         width: 25px;
+    }
+}
+@media screen and (max-width: 480px) {
+    header h1 {
+        width: 100%;
+    }
+    header {
+        height: 75px;
     }
 }
 @media screen and (max-width: 385px) {
@@ -269,9 +276,23 @@ li {
 }
 @media screen and (max-width: 268px) {
     header {
-        height: 200px;
+        height: 75px;
+    }
+    header h1 {
+        width: auto;
+        margin: auto;
     }
     #abertura {
         padding-top: 250px;
+    }
+    #nav, #user {
+        display:none;
+    }
+    header label {
+        display: block;
+        cursor:pointer;
+        margin: auto;
+        font-size: 20pt;
+        width: 75px;
     }
 }
