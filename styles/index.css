@@ -1,0 +1,253 @@
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@500&family=Dancing+Script&family=Unbounded&display=swap');
+body {
+    overflow-x: hidden;
+    box-sizing: border-box;
+    font-family: 'Rubik', sans-serif;
+    margin: auto;
+    text-align: center;
+    justify-content: center;
+    width:100vw;
+    height:100vh;
+    color: white;
+}
+
+header {
+    flex-wrap: wrap;
+    position:fixed;
+    display: flex;
+    background-image: linear-gradient(to right, rgb(69, 160, 16),rgb(21, 97, 6));
+    width: 100%;
+    height: 100px;
+}
+header label,input {
+    display: none;
+}
+
+h1 {
+    margin: auto auto auto 25px;
+    font-size: 29pt;
+    font-weight: bold;
+    font-family: 'Unbounded', cursive;
+    cursor: pointer;
+}
+.navs {
+    width: 75px;
+    margin: auto auto auto 20px;
+    color: white;
+    text-decoration: none;
+    font-size: 15pt;
+    font-weight: bold;
+}
+#nav {
+    margin: auto;
+}
+
+#user {
+    margin: auto;
+}
+
+.carro {
+    background-color: white;
+    padding: 12px;
+    padding-bottom: 35px;
+    width: 300px;
+    height: 450px;
+    margin: 30px;
+    border-radius: 15px;
+    color: rgb(92, 92, 92);
+    text-align: left;
+    display: flex;
+    flex-direction:column;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+}
+.carro h2, h3, h4 {
+    font-weight: normal;
+}
+.carro h3 {
+    margin-bottom: 0px;
+}
+.carro h4 {
+    margin-top : 2px;
+}
+.carro button {
+    width: 200px;
+    height: 35px;
+    background-color:rgb(69, 160, 16);
+    border-radius: 7px;
+    border: none;
+    color: white;
+    cursor: pointer;
+    transition: .1s;
+}
+.carro button:active {
+    background-color:rgb(133, 202, 94);
+}
+
+a {
+    cursor:pointer;
+    transition: .1s;
+}
+a:active {
+    color: rgb(185, 185, 185);
+}
+
+
+#pagina img {
+    width: 300px;
+}
+#pagina {
+    flex-wrap: wrap;
+    display: flex;
+    justify-content: center;
+    background-color: rgb(238, 238, 238);
+}
+
+
+
+
+#foot {
+    justify-content: center;
+    flex-wrap: wrap;
+    display: flex;
+}
+footer {
+    overflow-x: hidden;
+    font-size: 12pt;
+    background-color: rgb(0, 73, 0);
+}
+#redes {
+    margin: 20px 20px auto auto;
+}
+#contact {
+    margin: 20px auto auto 20px;
+}
+#atendimento, #company {
+    margin: 20px 20px auto 20px;
+}
+li {
+    overflow: hidden;
+    padding-right: 30px;
+}
+#copy {
+    margin-bottom: 0px;
+    overflow-y: hidden;
+    padding: 10px 0px 10px 0px;
+    background-color: rgb(0, 58, 0);
+}
+#foot section {
+    margin: auto;
+}
+
+
+
+
+.redes {
+    width: 40px;
+}
+
+#celta {
+    width: 500px;
+    margin: auto auto auto 50px;
+}
+#abertura {
+    padding-top: 100px;
+    display: flex;
+    color: rgb(92, 92, 92);
+    margin-bottom: 100px;
+}
+#abertura div {
+    width: 500px;
+    margin: auto 50px auto auto;
+}
+#abertura h1 {
+    font-size: 40pt;
+}
+#abertura p {
+    font-size: 19pt;
+}
+
+@media screen and (max-width: 850px) {
+    #abertura img {
+        display: none;
+    }
+    #abertura div {
+        margin: auto;
+    }
+    #abertura {
+        padding-top: 150px;
+    }
+}
+@media screen and (max-width:802px){
+    header {
+        height: 150px;
+    }
+    #abertura {
+        padding-top: 200px;
+    }
+}
+@media screen and (max-width: 768px) {
+    #redes {
+        width: 50%;
+    }
+    #atendimento {
+        width: 50%;
+    }
+    #pagina {
+        flex-wrap:nowrap;
+        justify-content: flex-start;
+        overflow-x: scroll;
+    }
+}
+
+@media screen and (max-width: 630px) {
+    header h1 {
+        margin: auto;
+    }
+}
+
+@media screen and (max-width: 524px) {
+    header label {
+        display: block;
+        cursor:pointer;
+        margin: auto;
+        font-size: 30pt;
+        width: 75px;
+    }
+    header {
+        height: 100px;
+    }
+    #abertura {
+        padding-top: 150px;
+    }
+    #abertura div p{
+        font-size: 13pt;
+    }
+    #abertura div h1 {
+        margin:auto;
+        font-size: 20pt;
+    }
+    #nav, #user {
+        display:none;
+    }
+    footer {
+        font-size: 9pt;
+    }
+    .redes {
+        width: 25px;
+    }
+}
+@media screen and (max-width: 303px) {
+    #foot section {
+        display: none;
+    }
+}
+@media screen and (max-width: 268px) {
+    header {
+        height: 200px;
+    }
+    #abertura {
+        padding-top: 250px;
+    }
+}
