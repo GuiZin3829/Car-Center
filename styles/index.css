@@ -170,13 +170,22 @@ li {
 
 @media screen and (max-width: 850px) {
     #abertura img {
-        display: none;
+        width: 200px;
+        margin: auto auto auto 25px;
     }
     #abertura div {
-        margin: auto;
+        margin: auto 25px auto auto;
+        width: 200px;
     }
     #abertura {
         padding-top: 150px;
+    }
+    #abertura div p{
+        font-size: 11pt;
+    }
+    #abertura div h1 {
+        margin:auto;
+        font-size: 18pt;
     }
 }
 @media screen and (max-width:802px){
@@ -220,13 +229,6 @@ li {
     }
     #abertura {
         padding-top: 150px;
-    }
-    #abertura div p{
-        font-size: 13pt;
-    }
-    #abertura div h1 {
-        margin:auto;
-        font-size: 20pt;
     }
     #nav, #user {
         display:none;
