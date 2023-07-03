@@ -11,6 +11,8 @@ body {
     color: white;
 }
 
+
+/* HEADER */
 header {
     flex-wrap: wrap;
     position:fixed;
@@ -19,8 +21,13 @@ header {
     width: 100%;
     height: 100px;
 }
-header label,input {
+header h1 a {
+    text-decoration: none;
+    color: white;
+}
+header label, header input {
     display: none;
+    color: white;
 }
 
 h1 {
@@ -28,7 +35,6 @@ h1 {
     font-size: 29pt;
     font-weight: bold;
     font-family: 'Unbounded', cursive;
-    cursor: pointer;
 }
 .navs {
     width: 75px;
@@ -45,7 +51,9 @@ h1 {
 #user {
     margin: auto;
 }
+/* /HEADER */
 
+/* PAGINA */
 .carro {
     background-color: white;
     padding: 12px;
@@ -104,9 +112,10 @@ a:active {
     background-color: rgb(238, 238, 238);
 }
 
+/* /PAGINA */
 
 
-
+/* FOOTER */
 #foot {
     justify-content: center;
     flex-wrap: wrap;
@@ -139,10 +148,10 @@ li {
 #foot section {
     margin: auto;
 }
+/* /FOOTER */
 
 
-
-
+/* FRONT */
 .redes {
     width: 40px;
 }
@@ -166,6 +175,63 @@ li {
 }
 #abertura p {
     font-size: 19pt;
+}
+/* /FRONT */
+
+/* SIGN UP */
+#signbody {
+    background-color: rgb(226, 226, 226);
+}
+#sign div {
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    padding: 10px 20px 0px 20px;
+}
+#sign {
+    margin: auto;
+    color: rgb(92, 92, 92);
+    width: 50%;
+    max-width: 800px;
+    background-color: white;
+    box-shadow: 0px 0px 10px rgb(189, 189, 189);
+    min-width: 300px;
+    margin-top: 3%;
+    border-radius: 15px;
+    padding-bottom:50px;
+    padding-top: 30px;
+}
+#sign input {
+    color :rgb(92, 92, 92);
+    margin: 10px auto 10px auto;
+    width: 85%;
+    height: 4vh;
+    display: block;
+    outline: none;
+    background-color: white;
+    border: 1px solid rgb(204, 204, 204);
+    border-radius: 5px;
+    padding-left: 10px;
+}
+#sign input[type="submit"] {
+    margin: 40px auto auto auto;
+    border: none;
+    background-color:rgb(69, 160, 16);
+    color: white;
+    transition: .1s;
+}
+#sign input[type="submit"]:active {
+    background-color:rgb(133, 202, 94);
+}
+#sign h1 {
+    color: rgb(69, 160, 16);
+}
+#sign h2 {
+    margin: 40px auto 20px auto;
+}
+#sign h1 {
+    margin: auto;
 }
 
 @media screen and (max-width: 1152px) {
@@ -224,6 +290,16 @@ li {
         overflow-x: scroll;
     }
 }
+@media screen and (min-width: 663px) {
+    #sign #pass {
+        width: 39%;
+        margin: 10px 2% 10px auto;
+    }
+    #sign #repeat {
+        width: 39%;
+        margin: 10px auto 10px 2%;
+    }
+}
 
 @media screen and (max-width: 630px) {
     header h1 {
@@ -252,6 +328,10 @@ li {
     .redes {
         width: 25px;
     }
+
+    #sign h1 {
+        font-size: 18pt;
+    }
 }
 @media screen and (max-width: 480px) {
     header h1 {
@@ -270,9 +350,9 @@ li {
     }
 }
 @media screen and (max-width: 303px) {
-    #foot section {
+    /*#foot section {
         display: none;
-    }
+    }*/
 }
 @media screen and (max-width: 268px) {
     header {
@@ -283,7 +363,7 @@ li {
         margin: auto;
     }
     #abertura {
-        padding-top: 250px;
+        padding-top: 125px;
     }
     #nav, #user {
         display:none;
